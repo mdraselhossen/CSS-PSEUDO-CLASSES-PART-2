@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css tutorial</title>
+    <style>
+        /*input:focus{ border:3px solid red; }*/
+
+        /*input[type="checkbox"]:checked{box-shadow: 0 0 0 3px red; }
+        input[type="radio"]:checked{box-shadow: 0 0 0 3px red; }*/
+
+       /*input[type="text"]{border:3px solid green;}
+        input:disabled{border:3px solid green;}*/
+
+       /* input:required{border:2px solid green;background: lightskyblue; }
+        input:optional{border:2px solid blue;background: red; }*/
+
+       /* input:in-range{border:2px solid blue;background: rgb(9, 241, 48); }
+        input:out-of-range{border:2px solid blue;background: rgb(240, 8, 143); }*/
+
+       /* input:read-only{border:2px solid blue;background: rgb(240, 8, 143); }
+        input:read-write{border:2px solid blue;background: rgb(15, 137, 146); }*/
+
+      /*  input:invalid{border:2px solid red;background: rgb(247, 9, 227); }
+        input:valid{border:2px solid blue;background: rgb(242, 244, 247); }*/
+
+       input:default{box-shadow: 0 0 0 3px red; } input:default+label{color: red;}
+            option:default{color: rgb(240, 14, 127);}
+
+    </style>
+</head>
+<body>
+    <form>
+        <label>First Name </label><input type="text" required><br><br>
+        <label>Last Name </label><input type="text" ><br><br>
+        <label>Your Age </label><input type="number" min="10" max="20"><br><br>
+        <label>Your Email Id  </label><input type="email" required ><br><br>
+        <label>Your Hobbies</label>
+        <input type="checkbox" name="hobe"><label>Sports</label>
+        <input type="checkbox" checked  name="hobe"><label>Watching Movie</label>
+        <input type="checkbox" name="hobe"><label>Music</label>
+        <input type="checkbox" name="hobe"><label>Travel</label><br><br>
+        <label>Gender :</label>
+        <input type="radio" value="gender"><label>Male</label>
+        <input type="radio" value="gender"><label>Female</label><br><br>
+        <label>Your Country</label>
+            <select name="country">
+                <option value="none">Select</option>
+                <option  value="bangladesh" selected>bangladesh</option>
+                <option value="qatar">Qatar</option>
+                <option value="oman">Oman</option>
+                <option value="nepal">Nepal</option>
+            </select><br><br>
+            <input type="submit" >
+
+    </form>
+    
+</body>
+</html>
